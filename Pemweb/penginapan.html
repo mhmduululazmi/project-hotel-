@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel AstonHotelInternational</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background: #f4f4f4;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form input, .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .breadcrumb {
+            margin: 20px 0;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007BFF;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo aston.JPEG" alt="Hotel Aston">
+        <h1>Hotel AstonHotelInternational</h1>
+        <p>Kami adalah merek hotel paling terkenal dan terpercaya di seluruh nusantara</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#branches">Cabang</a></li>
+            <li><a href="#promotions">Promosi</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="#">Home</a> / <span>Landing Page</span>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah merek hotel paling terkenal dan terpercaya di seluruh nusantara, yang telah menyambut dan dengan penuh semangat melayani jutaan tamu domestik dan luar negeri setiap bulannya selama lebih dari dua dekade.</p>
+        </section>
+
+        <section id="branches">
+            <h2>Cabang Kami</h2>
+            <div class="grid">
+                <div>
+                    <img src="Aston.JPEG" alt="Cabang Jakarta">
+                    <h3>Hotel Aston Sentul</h3>
+                </div>
+                <div>
+                    <img src="Aston4.JPEG" alt="Cabang Bandung">
+                    <h3>Hotel Aston Cirebon</h3>
+                </div>
+                <div>
+                    <img src="Aston3.JPEG" alt="Cabang Surabaya">
+                    <h3>Hotel Aston Bogor</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="promotions">
+            <h2>Promosi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Harga</th>
+                        <th>Waktu</th>
+                        <th>Syarat & Ketentuan</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Weekend Relax</td>
+                        <td>Rp 800.000,00</td>
+                        <td>Jumat-Minggu</td>
+                        <td>Reservasi minimal 2 malam</td>
+                        <td>Diskon 20% untuk kamar Deluxe Room.</td>
+                    </tr>
+                    <tr>
+                        <td>Family Package</td>
+                        <td>Rp 1.200.000,00</td>
+                        <td>Setiap hari</td>
+                        <td>Maksimal 4 orang</td>
+                        <td>Mendapatkan Breakfast gratis.</td>
+                    </tr>
+                    <tr>
+                        <td>Special Honeymoon</td>
+                        <td>Rp 2.000.000,00</td>
+                        <td>Setiap hari</td>
+                        <td>Khusus pasangan</td>
+                        <td>Suite Room dengan dekorasi romantis.</td>
+                    </tr>
+                    <tr>
+                        <td>Early Bird</td>
+                        <td>Rp 500.000,00</td>
+                        <td>Senin-Jumat</td>
+                        <td>Reservasi minimal 7 hari sebelum check-in</td>
+                        <td>Diskon 15% untuk semua tipe kamar.</td>
+                    </tr>
+                    <tr>
+                        <td>Corporate Deal</td>
+                        <td>Rp 750.000,00</td>
+                        <td>Setiap hari</td>
+                        <td>Khusus pemesanan perusahaan</td>
+                        <td>Fasilitas meeting room gratis.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="form">
+            <h2>Form pemesanan</h2>
+            <form action="#" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
